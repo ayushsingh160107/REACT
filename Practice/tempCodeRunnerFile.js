@@ -1,0 +1,1 @@
+const newString=gameName.substring(0,3);
