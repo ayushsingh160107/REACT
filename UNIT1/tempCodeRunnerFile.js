@@ -1,7 +1,6 @@
-(function person(){
-//     this.age=25;
-//     setTimeout(function(){
-//         console.log(this.age);
-//     },1000);
-// })();
-// new person();
+const calculator=()=>({
+//     add: (a,b)=>a+b,
+//     sub:(a,b)=>a-b,
+//     mul:(a,b)=>a*b,
+//     div:(a,b)=>(b===0?"Error":a/b),
+// })
