@@ -1,4 +1,4 @@
-import './App.css'
+  import './App.css'
 import Header from './components/Header.jsx';
 import Footer from './components/Footer.jsx';
 import Registration from './components/Registration.jsx'; 
@@ -12,6 +12,11 @@ function App() {
     <Registration />
     <h1>Meoww Meowww</h1>
     <h2>Welcome to React!</h2>
+    <card>
+      <h4>This is children demo</h4>
+      <p>This Demo is for understanding children props in React.</p>
+        
+    </card>
     <Footer year={y[2]} company={c.name} />
     </div>
   )
