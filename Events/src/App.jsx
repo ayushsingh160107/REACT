@@ -1,10 +1,15 @@
-import Counter from "./Counter";
-import "./CounterColour.css";
 
-export default function App() {
-  return(
+import './App.css'
+import EventToDo from './EventToDo'
+import EventTodo from './EventToDo'
+import Counter from './Counter'
+import Search from './Search'
+function App() {
+  return (
     <>
-      <Counter />
+     <EventToDo />
+     <Search />
     </>
   )
 }
+export default App
