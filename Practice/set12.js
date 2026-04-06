@@ -1,24 +1,3 @@
-// // function greet(){
-// //     console.log("Welcome");
-// // }
-// // function execute(fn){
-// //     fn();
-// // }
-// // execute(greet);
-
-// const number=[1,2,3,4,5];
-// // const newnumber=number.map(function(num){
-// //     console.log(num*num);
-// // });
-
-// // const newnumber=number.map(num=>num*num);
-// // console.log(newnumber);
-
-// const newnum=number.filter((n)=>n%2==0);
-// console.log(newnum);
-
-// const n=
-
 /*
 ===========================================================
 ES6 LMS Coding Assignment
@@ -61,6 +40,8 @@ const contact = {
 // positive numbers from the given array.
 // =================================================
 function positiveSquares(arr){
+
+  // WRITE YOUR CODE HERE
   return arr.filter(n => n > 0).map(n => n * n);
 
 }
@@ -73,9 +54,11 @@ function positiveSquares(arr){
 // of the array.
 // =================================================
 function specialSum(arr){
+
+  // WRITE YOUR CODE HERE
   const [first, second, ...rest] = arr;
   const last = rest[rest.length - 1];
-  return first+second+last;
+  return first + second + last;
 
 }
 
@@ -87,6 +70,8 @@ function specialSum(arr){
 // "Rohit (rohit@gmail.com) from Mumbai is studying B.Tech"
 // =================================================
 function studentDescription(p){
+
+  // WRITE YOUR CODE HERE
   const {name, course, address:{city}} = p;
   const {email} = contact;
   return `${name} (${email}) from ${city} is studying ${course}`;
@@ -101,6 +86,8 @@ function studentDescription(p){
 // Example: "STU-20-Rohit"
 // =================================================
 function generateStudentCode(p){
+
+  // WRITE YOUR CODE HERE
   const {id, name} = p;
   return `STU-${id}-${name}`;
 
@@ -114,6 +101,8 @@ function generateStudentCode(p){
 // smallest value from all parameters.
 // =================================================
 function range(...nums){
+
+  // WRITE YOUR CODE HERE
   const max = Math.max(...nums);
   const min = Math.min(...nums);
   return max - min;
@@ -128,6 +117,8 @@ function range(...nums){
 // add property status : "ACTIVE"
 // =================================================
 function buildStudentProfile(p,c){
+
+  // WRITE YOUR CODE HERE
   return {
     ...p,
     ...c,
@@ -148,6 +139,8 @@ function buildStudentProfile(p,c){
 // "Hello Rohit"
 // =================================================
 function lexicalDemo(obj){
+
+  // WRITE YOUR CODE HERE
   const student = {
     name: obj.name,
     greet(){
@@ -167,6 +160,8 @@ function lexicalDemo(obj){
 // Default multiplier = 3.
 // =================================================
 function scaleNumbers(arr, multiplier = 3){
+
+  // WRITE YOUR CODE HERE
   return arr.map(n => n * multiplier);
 
 }
@@ -185,6 +180,8 @@ function scaleNumbers(arr, multiplier = 3){
 // Use setTimeout to simulate async delay.
 // =================================================
 function analyzeDataset(arr){
+
+  // WRITE YOUR CODE HERE
   return new Promise((resolve,reject)=>{
     setTimeout(()=>{
       const sum = arr.reduce((a,b)=>a+b,0);
@@ -210,9 +207,12 @@ function analyzeDataset(arr){
 // The output should appear AFTER the 2-second delay.
 // =================================================
 function processDataset(arr){
+
+  // WRITE YOUR CODE HERE
   analyzeDataset(arr)
     .then(res => console.log(res.toUpperCase()))
     .catch(err => console.log(err.toUpperCase()));
+
 }
 
 // =================================================

@@ -1,0 +1,44 @@
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  border-bottom: 2px solid lightblue;
+  background-color: #355c7e;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  background-color: rgb(72, 182, 225);
+  color: rgb(255, 255, 255);
+  padding: 8px;
+  border-radius: 8px;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.right a {
+  text-decoration: none;
+  color: black;
+}
+
+button {
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.login {
+  background-color: skyblue;
+  color: white;
+  border: none;
+}
