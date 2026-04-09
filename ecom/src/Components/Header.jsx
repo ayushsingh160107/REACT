@@ -1,8 +1,13 @@
-export default function Header({cartCount}){
-    return(
-        <div>
-            <h2>React Demo App</h2>
-            <p>Cart Item: {cartCount}</p>
-        </div>
-    )
+import { Link } from "react-router-dom";
+
+function Header() {
+  return (
+    <nav>
+      <Link to="/">Home</Link>
+      <Link to="/cart">Cart</Link>
+      <Link to="/form">Form</Link>
+    </nav>
+  );
 }
+
+export default Header;
