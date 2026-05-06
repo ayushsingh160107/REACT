@@ -7,7 +7,7 @@ const App=()=>{
   const {user,setUser}=useContext(UserContext);
   const {lang,setLang}=useContext(LangContext);*/
 
-     const {state,dispatch}=useContext(ThemeContext);
+     const {state,dispatch}=useContext(GlobalContext);
     const {theme,user,lang}=state;
 
   return(
